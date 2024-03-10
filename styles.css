@@ -1,0 +1,95 @@
+/** @format */
+
+:root {
+    --primary-color: #f0f4f8;
+    --secondary-color: #8c9ea3;
+    --text-color: #333;
+    --node-bg-color: #fff;
+    --node-border-color: #d1d8e0;
+    --node-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mind-map {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+}
+
+.node {
+    position: absolute;
+    background-color: var(--node-bg-color);
+    border: 2px solid var(--node-border-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--node-shadow);
+    transform: translate(-50%, -50%);
+}
+
+.central-node {
+    top: 50%;
+    left: 50%;
+}
+
+.memory {
+    background-color: #f6eee9;
+}
+
+.intuitive {
+    background-color: #e4f3ef;
+}
+
+.collaboration {
+    background-color: #e2ebf8;
+}
+
+.clutter {
+    background-color: #f5e5eb;
+}
+
+.focus {
+    background-color: #f6eee9;
+}
+
+.overview {
+    background-color: #e4f3ef;
+}
+
+.mind-map .branch-node:nth-child(2) {
+    transform: translate(-50%, 0);
+}
+
+.mind-map .branch-node:nth-child(3) {
+    transform: translate(0, -50%);
+}
+
+.mind-map .branch-node:nth-child(4) {
+    transform: translate(0, -50%);
+}
+
+.mind-map .branch-node:nth-child(5) {
+    transform: translate(-50%, 0);
+}
+
+.mind-map .branch-node:nth-child(6) {
+    transform: translate(0, -50%);
+}
+
+.mind-map .branch-node:nth-child(7) {
+    transform: translate(0, -50%);
+}
